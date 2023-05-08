@@ -30,13 +30,29 @@
       <a-cone id="box1" src="https://i.imgur.com/mYmmbrp.jpg" position="0 2 -5" rotation="0 45 45"
       scale="2 2 2"></a-box>
     </a-scene> -->
+
+    <a-scene>
+      <a-assets>
+        <img id="boxTexture" src="https://i.imgur.com/mYmmbrp.jpg">
+        <img id="skyTexture" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg">
+        <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg">
+      </a-assets>
+      <a-sky src="#skyTexture"></a-sky>
+      <a-box id="box1" src="#boxTexture" position="0 2 -5" rotation="0 45 45" scale="2 2 2"></a-box>
+      <a-plane id="ground" src="#groundTexture" rotation="-90 0 0" width="30" height="30" repeat="10 10"></a-plane>
+      <!-- <a-light type="ambient" ></a-light> -->
+      <a-light type="point" intensity="2" position="2 4 4" color="#445451"></a-light>
+    </a-scene>
+<!--     
     <a-scene>
       <a-assets>
         <img id="boxTexture" src="https://i.imgur.com/mYmmbrp.jpg">
       </a-assets>
       <a-sky color="magenta"></a-sky>
-      <a-box id="box1" src="#boxTexture" position="0 2 -5" rotation="0 45 45" scale="2 2 2"></a-box>
-    </a-scene>
+      <a-box id="box1" src="#boxTexture" position="-2 2 -5" rotation="0 45 45" scale="2 2 2"></a-box>
+      <a-box id="box1" src="#boxTexture" position="2 2 -5" rotation="0 45 45" scale="2 2 2"></a-box>
+      <a-cone id="box1" src="#boxTexture" position="5 2 -5" rotation="0 45 45"></a-cone>
+    </a-scene> -->
   </body>
 </html>
 
